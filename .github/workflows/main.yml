@@ -1,0 +1,14 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: Ubuntu-latest
+    
+    steps:
+    - uses:  action/checkot2@v2
+    
